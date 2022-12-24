@@ -7,14 +7,14 @@ void kucukbul(int dizi[],int *kckptr)
 
 	for (int i = 1; i < SIZE; i++)
 	{
-		if (dizi[i] < *kckptr)//* koyduk çünkü  içindeki deðeri kontrol ediceðiz 
+		if (dizi[i] < *kckptr)//* koyduk Ã§Ã¼nkÃ¼  iÃ§indeki deÃ°eri kontrol ediceÃ°iz 
 		{
 			kckptr = &dizi[i];
 			
 		}
 		
 	 
-		printf("en kücük deger adresi %p , degeri %d\n", kckptr, *kckptr);
+		printf("en kÃ¼cÃ¼k deger adresi %p , degeri %d\n", kckptr, *kckptr);
 
 	}
 }
