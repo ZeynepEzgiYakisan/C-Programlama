@@ -18,10 +18,10 @@ int main()
 {
 	int sayi = 0;
 
-	printf("Faktöriyelenin hesaplanmasını istediğiniz sayi giriniz");
+	printf("FaktÃ¶riyelenin hesaplanmasÃ½nÃ½ istediÃ°iniz sayi giriniz");
 	scanf("%d",&sayi);
 
-	printf("Faktöriyel hesabının sonucu %d ", faktoriyelhesap(sayi));
+	printf("FaktÃ¶riyel hesabÃ½nÃ½n sonucu %d ", faktoriyelhesap(sayi));
 	return 0;
 
 }
