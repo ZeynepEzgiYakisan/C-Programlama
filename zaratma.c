@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-#define SIZE 10 /*SIZE ile fonksiyonun kaç kez çalýþacaðýný söyleyeceðiz*/
+#define SIZE 10 /*SIZE ile fonksiyonun kaÃ§ kez calisacagini sÃ¶yleyecegiz*/
 
 void atamayapma(int dizi[])
 {
 	for (int i = 0; i < SIZE; i++)
-		/*sýze burada 10 kez olacaðýný söylemek için */
+		/*size burada 10 kez olacagani sÃ¶ylemek iÃ§in */
 	{
-		dizi[i] = 1 + rand() % 100;//1-100 arasýnda rasgele sayýlarla oluþturmak için 
+		dizi[i] = 1 + rand() % 100;//1-100 arasinda rasgele sayilarla olusturmak iÃ§in 
 	}
 }
 void yazdir(int dizi1[])
