@@ -18,7 +18,7 @@ int main()
 {
 	int sayi = 0;
 
-	printf("Faktöriyelenin hesaplanmasýný istediðiniz sayi giriniz");
+	printf("Faktöriyelenin hesaplanmasini istediginiz sayi giriniz");
 	scanf("%d",&sayi);
 
 	printf("Faktöriyel hesabýnýn sonucu %d ", faktoriyelhesap(sayi));
