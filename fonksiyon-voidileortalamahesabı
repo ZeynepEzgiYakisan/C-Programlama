@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+void orthesapla(int vize, int final)
+{
+	double ort = (double)vize * 0.4 + (double)final * 0.6;
+	if (ort > 90 && ort < 100)
+	{
+		printf("ORTALAMA=%.1lf AA aldiniz", ort);
+	}
+	else if (ort > 70 && ort < 90)
+	{
+		printf("ORTALAMA=%.1lf BB aldiniz", ort);
+	}
+	else if (ort > 50 && ort < 70)
+	{
+		printf("ORTALAMA=%.1lf CC aldiniz", ort);
+	}
+	else(ort<50)
+	{
+		printf("ORTALAMA=%.1lf Kaldin Kardesim", ort);
+	}
+
+
+
+	
+}
+
+int main()
+{
+	int vize, final;
+	printf("VİZE NOTUNUZU GİRİNİZ:");
+	scanf("%d", &vize);
+	printf("FİNAL NOTUNUZU GİRİNİZ:");
+	scanf("%d", &final);
+	
+	orthesapla(vize, final);
+}
