@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int kareal(int x)
+{
+	int y = x * x; // bir sayının karesini aldık 
+
+	printf("%d", y); // printf ile y ekrana yazdırdık 
+
+	return y; // geri dönüş değerimiz y oldu
+}
+
+int main()
+{
+	int* a;// pointer ile a yı tanımladık 
+	printf("karesini almak istediğiniz sayı giriniz");	 // kullanıcıdan sayı aldık
+	scanf("%d",&a);// &a kullanacağız 
+
+	kareal(a);// kareal fonksiyonumuza a yı tanımladık
+
+	return 0;
+
+
+}
+
