@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int saat;
+	printf("Kac Saat Kaldiniz:");
+	scanf("%d", &saat);
+
+	if (saat > 0 && saat <= 4)
+	{
+		printf("10TL odeme yapın.");
+	}
+	if (saat >=5 && saat <= 8)
+	{
+		printf("12TL odeme yapın.");
+	}
+	if (saat >=9 && saat <= 12)
+	{
+		printf("15TL odeme yapın.");
+	}
+	return 0;
+
