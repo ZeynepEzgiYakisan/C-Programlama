@@ -1,0 +1,57 @@
+#include<locale.h>
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+	/* 
+	kullanıcıdan 1 ila 100 arasında bir sayı isteyelim 
+	doğruluğunu kontrol edelim yanlış girdi ise tekrar girmesini isteyelim(doğru girene kadar)
+	2 ye 3 e 5 e tam bölünüp bölünmedğini kontrol edelim
+	sonucu yazdıralım 
+	*/
+	setlocale(LC_ALL, "Turkish");
+	int sayi = 0, tambolunen=1;
+	do
+	{
+		printf("Lütfen 1 ila 100 arasında bir sayı giriniz : ");
+		scanf("%d",&sayi);
+	} while(sayi<1 || sayi>100);
+
+	if (sayi % 2 == 0)
+		tambolunen = tambolunen*2;
+	if (sayi % 3 == 0)
+		tambolunen = tambolunen*3;
+	if (sayi % 5 == 0)
+		tambolunen = tambolunen*5;
+	
+
+	switch (tambolunen)
+	{
+	case 2:
+		printf("Sayi 2 ile tam bölünüyor");
+		break;
+	case 3:
+		printf("Sayi 3 ile tam bölünüyor");
+		break;
+	case 5:
+		printf("Sayi 5 ile tam bölünüyor");
+		break;
+	case 6:
+		printf("Sayi 2 ve 3 ile tam bölünüyor");
+		break;
+	case 10:
+		printf("Sayi 2 ve 5 ile tam bölünüyor");
+		break;
+	case 15:
+		printf("Sayi 2 3 ve 5 ile tam bölünüyor");
+		break;
+	default:
+		printf("Sayi 2,3,5 ile tam bölünmüyor");
+		break;
+	}
+
+	return 0;
+
+}
