@@ -1,0 +1,54 @@
+/*Boy ve kilo bilgisini alarak vücut kitle indeksini hesaplayan kitleIndeks isimli bir fonksiyon olusturma*/
+
+#include<stdio.h>
+int hesap(double boy, double kilo)
+{
+	double indeks;
+	indeks = kilo / (boy * boy);
+
+	if (indeks <18)
+	{
+		return 1;
+	}
+
+	else if (indeks >= 18 && indeks < 25)
+	{
+		return 2;
+	}
+
+	else if (indeks >= 25)
+	{
+		return 3;
+	}
+
+}
+
+int main()
+{
+
+	double boy=0, kilo=0;
+
+	printf("Kilonuzu ve Boyunuz Girin");
+	scanf("%lf %lf", &boy, &kilo);
+	
+	
+
+	int sonuc = hesap(boy, kilo);
+
+	if (sonuc == 1)
+	{
+		printf("ZAYiFSINiZ");
+	}
+	if (sonuc == 2)
+	{
+		printf("NORMALSİNİZ");
+	}
+	if (sonuc == 3)
+	{
+		printf("OBEZSİNİZ");
+	}
+	
+	return 0;
+
+
+}
