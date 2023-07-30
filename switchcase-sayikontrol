@@ -1,0 +1,41 @@
+#include<locale.h>
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+	/* 
+	kullanıcıdan 1 ila 5 arasında bir sayı isteyelim 
+	doğruluğunu kontrol edelim yanlış girdi ise tekrar girmesini isteyelim(doğru girene kadar)
+	1,2,3 zayıf
+	4 orta
+	5 süper
+	*/
+	setlocale(LC_ALL, "Turkish");
+	int sayi = 0;
+	do
+	{
+		printf("Lütfen 1 ila 5 arasında bir sayı giriniz : ");
+		scanf("%d",&sayi);
+	} while(sayi<1 || sayi>5);
+
+
+	switch (sayi)
+	{
+	case 1:
+	case 2: 
+	case 3:
+		printf("kötü");
+		break;
+	case 4:
+		printf("orta");
+		break;
+	case 5:
+		printf("süper");
+		break;
+	}
+
+	return 0;
+
+}
