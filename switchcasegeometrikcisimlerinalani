@@ -1,0 +1,37 @@
+// switch case yapisini kullanarak çeşitli geometrik cisimlerin alanlarını hesaplama uygulaması
+// secimler su sekilde olmali 1.kare 2.ucgen 3.daire alanlari
+// not: dairenin alani 2.PI.r
+
+#include <stdio.h>
+
+int main()
+{
+		int secim,kenar = 0, yukseklik = 0, taban = 0, yaricap = 0;
+		printf("-- hangi geometrik seklin alanini bulmak istersiniz:--\n");
+		printf("1.kare\n2.ucgen\n3.daire\n\n");
+		scanf("%d",&secim); printf("\n");
+		switch (secim)
+		{
+		case 1:
+			printf(" karenin bir kenarini giriniz :");
+			scanf("%d", &kenar); printf("\n");
+			printf("karenin alani : %d\n",(kenar*kenar));
+			break;
+		case 2:
+			printf("ücgenin tabanini giriniz :");
+			scanf("%d", &taban); printf("\n");
+			printf("ücgenin yüksekligini giriniz :");
+			scanf("%d", &yukseklik); printf("\n");
+			printf(" ücgenin alani : %d\n", ((taban*yukseklik)/2));
+			break;
+		case 3:
+			printf(" dairenin yaricapini giriniz :");
+			scanf("%d", &kenar); printf("\n");
+			printf("dairenin alani : %d\n", (2*3*yaricap));
+			break;
+		default:
+			printf("gecerli bir giris yapilmadi...\n\n");
+			break;
+		}
+
+}
